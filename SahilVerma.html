@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap" rel="stylesheet">
+    <title>Sahil Verma Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Section-1 {
+            display: flex;
+            justify-content: flex-end;
+            gap: 33px;
+            font-weight: 700;
+            padding: 27px 60px;
+        }
+
+        .Section-2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 148px;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .John_leftsection {
+            max-width: 506px;
+
+        }
+
+        .John_title {
+            font-family: "Heebo";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 60px;
+            color: #21243d;
+            margin-bottom: 40px;
+        }
+
+        .John_discription {
+            font-family: "Heebo";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #21243d;
+            margin-bottom: 38px;
+        }
+
+        .John_button {
+            background: #ff6464;
+            border-radius: 2px;
+            padding: 12px;
+            border: 0;
+            color: white;
+            margin: 33px;
+            cursor: pointer;
+        }
+
+        .John_img {
+            width: 300px;
+
+            /* padding: 0 149px; */
+        }
+
+        .Section-3 {
+            background: #edf7fa;
+        }
+
+        .recentposts {
+            max-width: 1440px;
+            margin: 0 auto 0;
+            padding: 0 148px;
+        }
+
+        .recent_view {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .recent_view_LEFT {
+            font-family: "Heebo";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 60px;
+        }
+
+        .recent_view_RIGHT {
+            margin-top: 27px;
+            text-decoration: none;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .cards>div {
+            background-color: #ffffff;
+            box-shadow: 0px 4px 10px rgba(187, 225, 250 0.5);
+            border-radius: 4px;
+            padding: 24px 22px;
+        }
+
+        .cardheading {
+            font-family: "Heebo";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 38px;
+            color: #21243d;
+            margin: 24px;
+        }
+
+        .cardcontent {
+            font-family: "Heebo";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #21243d;
+            margin: 24px;
+        }
+
+        .carddescription {
+            font-family: "Heebo";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #21243d;
+            margin: 24px;
+        }
+
+        .Section-4 {
+            max-width: 1440px;
+            margin: 15px auto 0;
+            padding: 0 148px 32px;
+        }
+
+        .featuresheading {
+            color: var(--dark-color, #21243D);
+            font-size: 22px;
+            font-family: Heebo;
+            line-height: 60px;
+
+        }
+
+        .list {
+            list-style-type: none;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .listitem {
+            display: flex;
+            gap: 18px;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 29px 0 15px;
+        }
+
+        .listheading {
+            margin-bottom: 16px;
+            font-family: "heebo";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 44px;
+            color: #21243d;
+        }
+
+        .listdetails {
+            margin-bottom: 17px;
+            display: flex;
+            align-items: center;
+            gap: 36px;
+        }
+
+        .year {
+            padding: 0 10px;
+            background-color: #142850;
+            border-radius: 16px;
+            font-family: "heebo";
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 25px;
+            color: #ffffff;
+            margin-right: 36px;
+        }
+
+        .FWpara {
+            font-family: "heebo";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #21243d;
+        }
+
+        .Section-5 {
+            display: flex;
+            align-items: center;
+            margin: 134px 0 54px;
+            flex-direction: column;
+            gap: 26px;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 21px;
+            color: #21243d;
+        }
+
+        .footer-img {
+            display: flex;
+            gap: 35px;
+        }
+
+        @media (max-width: 1024px) {
+            .Section-2 {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            .John-leftsection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .John_img {
+                width: 50%;
+            }
+
+            .John_title {
+                text-align: center;
+            }
+
+            .John_description {
+                text-align: center;
+            }
+
+            .recentposts {
+                padding: 0 10px;
+            }
+
+            .recent_view {
+                justify-content: center;
+            }
+
+            .recent_view_RIGHT {
+                display: none;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .Section-4 {
+                padding: 0 10px;
+            }
+
+            .listleftsection {
+                width: 100%;
+                aspect-ratio: 41/30;
+            }
+
+            .listleftsection>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .listitem {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .Section-2 {
+                padding: 0 20px;
+            }
+
+            .John_img {
+                width: fit-content;
+            }
+
+            .John_leftsection {
+                width: 100%;
+            }
+
+            .John_title {
+                font-size: 32px;
+                max-width: 100%;
+                line-height: 30px;
+            }
+
+            .John_discription {
+                font-size: 16px;
+            }
+
+            .recent_view_LEFT {
+                font-size: 18px;
+            }
+
+            .cardheading {
+                font-size: 22px;
+            }
+
+            .cardcontent {
+                font-size: 16px;
+            }
+
+            .carddescription {
+                font-size: 16px;
+            }
+
+            .featuresheading {
+                font-size: 18px;
+            }
+
+            .listheading {
+                font-size: 26px;
+            }
+
+            .year {
+                font-size: 14px;
+            }
+
+            .listdetails {
+                font-size: 18px;
+            }
+
+            .FWpara {
+                font-size: 12px;
+            }
+
+            .footer-disclaimer {
+                border-color: #edf7fa;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="Section-1">
+        <div>Works</div>
+        <div>Blog</div>
+        <div>Contact</div>
+    </header>
+    <main class="Section-2">
+        <div class="John_leftsection">
+            <div class="John_title">Hi, I am Sahil Verma,
+                Front end developer.</div>
+            <p class="John_discription">I am a skilled professional who specializes in designing and implementing user
+                interfaces for websites and web applications. I possess a strong understanding of front-end
+                technologies, including HTML, CSS, and JavaScript, and I have a keen eye for visual design and user
+                experience.</p>
+            <a href="https://drive.google.com/file/d/1Ua0d4tyCcKzm_gj7SBkwJgksQVxVtZYk/view?usp=drive_link"
+                target="_blank"><button class="John_button">Download Resume</button></a>
+        </div>
+        <div class="John_img"><img src="../personal_portfolio/IMG/frontphoto.png" alt="Profile_picture" class="sizeimg">
+        </div>
+    </main>
+    <section class="Section-3">
+        <div class="recentposts">
+            <div class="recent_view">
+                <div class="recent_view_LEFT">Recent Posts</div>
+                <a href="#" class="recent_view_RIGHT">View all</a>
+            </div>
+            <div class="cards">
+                <div class="leftcard">
+                    <div class="cardheading">Making a design system from scratch</div>
+                    <p class="cardcontent">12 Feb 2020 &nbsp; | &nbsp; Design, Pattern</p>
+                    <p class="carddescription">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+                <div class="rightcard">
+                    <div class="cardheading">Creating pixel perfect icons in Figma</div>
+                    <p class="cardcontent">12 Feb 2020 &nbsp; | &nbsp; Figma, Icon Design</p>
+                    <p class="carddescription">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Section-4">
+        <div class="featuresheading">Featured Works</div>
+        <ul class="list">
+            <li class="listitem">
+                <div class="listleftsection">
+                    <img src="/Live-Design-hTmL-CSS/Rectangle 30.png" alt="img-1">
+                </div>
+                <div class="listrightsection">
+                    <div class="listheading">Designing Dashboards</div>
+                    <div class="listdetails">
+                        <div class="year">2020</div>
+                        <p class="data">Dashboard</p>
+                    </div>
+                    <p class="FWpara">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                        officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </li>
+            <div class="Line"></div>
+            <li class="listitem">
+                <div class="listleftsection">
+                    <img src="/Live-Design-hTmL-CSS/Rectangle 32.png" alt="img-2">
+                </div>
+                <div class="listrightsection">
+                    <div class="listheading">Vibrant Portraits of 2020</div>
+                    <div class="listdetails">
+                        <div class="year">2018</div>
+                        <p class="data">Illustration</p>
+                    </div>
+                    <p class="FWpara">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                        officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </li>
+            <div class="Line"></div>
+            <li class="listitem">
+                <div class="listleftsection">
+                    <img src="/Live-Design-hTmL-CSS/Rectangle 34.png" alt="img-3">
+                </div>
+                <div class="listrightsection">
+                    <div class="listheading">36 Days of Malayalam type</div>
+                    <div class="listdetails">
+                        <div class="year">2018</div>
+                        <p class="data">Typography</p>
+                    </div>
+                    <p class="FWpara">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                        officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </li>
+            <div class="Line"></div>
+        </ul>
+    </section>
+    <footer class="Section-5">
+        <div class="footer-img">
+            <div><a href="https://instagram.com/sahilverma.01?igshid=NGExMmI2YTkyZg==" target="_blank"><img
+                        src="/Live-Design-hTmL-CSS/fb.png" alt="facebook"></a></div>
+            <div><a href="https://instagram.com/sahilverma.01?igshid=NGExMmI2YTkyZg==" target="_blank"><img
+                        src="/Live-Design-hTmL-CSS/insta.png" alt="instagram"></a></div>
+            <div><a href="https://www.linkedin.com/in/sahil-verma-43981a209" target="_blank"><img
+                        src="/Live-Design-hTmL-CSS/Vector (1).png" alt="twitter"></a></div>
+            <div><a href="https://www.linkedin.com/in/sahil-verma-43981a209" target="_blank"><img
+                        src="/Live-Design-hTmL-CSS/Linkedin.png" alt="linkdn"></a></div>
+        </div>
+        <p class="footer-disclaimer">Copyright ©2020 All rights reserved</p>
+    </footer>
+</body>
+
+</html>
